@@ -69,7 +69,7 @@
                   
                   <div class="logo">
                       <a class="d-block" href="index-2.html">
-                        <img loading="lazy" src="{{url('assets/images/logo.png"')}}" alt="Constra">
+                        <img loading="lazy" class="logo"    src="{{url('assets/images/logo.png')}}" alt="Jetcash">
                       </a>
                   </div><!-- logo end -->
   
@@ -88,9 +88,9 @@
                         </li>
   
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Société <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
-                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="{{route('GETPAGEAPROPOS')}}">A propos</a></li>
                               <li><a href="team.html">Our People</a></li>
                               <li><a href="testimonials.html">Testimonials</a></li>
                               <li><a href="faq.html">Faq</a></li>
