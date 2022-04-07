@@ -80,66 +80,38 @@
                   <div id="navbar-collapse" class="collapse navbar-collapse">
                       <ul class="nav navbar-nav ml-auto align-items-center">
                         <li class="nav-item dropdown active">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Accueil <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="index.html">Home One</a></li>
-                              <li class="active"><a href="index-2.html">Home Two</a></li>
-                            </ul>
+                            <a href="{{route('GETHOMEPAGE')}}" class="nav-link dropdown-toggle">Accueil</a>
+                         
                         </li>
   
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Société <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
                               <li><a href="{{route('GETPAGEAPROPOS')}}">A propos</a></li>
-                              <li><a href="team.html">Our People</a></li>
-                              <li><a href="testimonials.html">Testimonials</a></li>
-                              <li><a href="faq.html">Faq</a></li>
-                              <li><a href="pricing.html">Pricing</a></li>
+                              <li><a href="team.html">Partenaires</a></li>
+                         
                             </ul>
                         </li>
+                
+      
                 
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects <i class="fa fa-angle-down"></i></a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pays <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
-                              <li><a href="projects.html">Projects All</a></li>
-                              <li><a href="projects-single.html">Projects Single</a></li>
+                              <li><a href="services.html">Tout les pays</a></li>
                             </ul>
                         </li>
                 
+                  
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Devises <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
-                              <li><a href="services.html">Services All</a></li>
-                              <li><a href="service-single.html">Services Single</a></li>
+                              <li><a href="news-left-sidebar.html">Toutes les devises</a></li>
+                  
                             </ul>
                         </li>
                 
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Features <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="typography.html">Typography</a></li>
-                              <li><a href="404.html">404</a></li>
-                              <li class="dropdown-submenu">
-                                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Parent Menu</a>
-                                  <ul class="dropdown-menu">
-                                    <li><a href="#!">Child Menu 1</a></li>
-                                    <li><a href="#!">Child Menu 2</a></li>
-                                    <li><a href="#!">Child Menu 3</a></li>
-                                  </ul>
-                              </li>
-                            </ul>
-                        </li>
-                
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="news-left-sidebar.html">News Left Sidebar</a></li>
-                              <li><a href="news-right-sidebar.html">News Right Sidebar</a></li>
-                              <li><a href="news-single.html">News Single</a></li>
-                            </ul>
-                        </li>
-                
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{route('GETPAGECONTACT')}}">Contact</a></li>
   
                         <li class="header-get-a-quote">
                             <a class="btn btn-primary" href="contact.html">Get Free Quote</a>

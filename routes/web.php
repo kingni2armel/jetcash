@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\PageController;
+use  App\Http\Controllers\ContactController;
+
 
 
 /*
@@ -18,4 +20,8 @@ use  App\Http\Controllers\PageController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('accueil',[PageController::class,'GETHOMEPAGE'])->name('GETHOMEPAGE');
 Route::get('/apropos',[PageController::class,'GETPAGEAPROPOS'])->name('GETPAGEAPROPOS');
+Route::get('/contact',[PageController::class,'GETPAGECONTACT'])->name('GETPAGECONTACT');
+
+Route::post('/addcontact',[ContactController::class,'CREATECONTACT'])->name('CREATECONTACT');
